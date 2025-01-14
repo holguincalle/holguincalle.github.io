@@ -1,32 +1,296 @@
-body{
-    margin: 0;
-    padding: 0;
-    background: white;
-    font-family:consolas;
+* {
+	padding:0;
+	margin:0;
 }
 
-h1  {
-   position:relative;
-   text-align:center;
-   color: #fff;
-   width: 300px;
-   margin:20px auto;
-   font-size:30px;
-   background-color:black;
+body {background-color:#fff;
+}
+
+.header-container, .checkbox {
+	display: none;
+}
+
+nav {
+   background: black;
+   margin: 0;
+   width: 100%;
+   max-width: 1920px;
+   box-sizing: border-box;
+   padding: 10px;
+   z-index: 10;
+   position: fixed;
+   box-shadow: 0px 0px 50px #000;
+}
+
+.header-logo2 {
+	transition: 0.3s;
 }
 
 .menu {
-    width: 80%;
-    height: 100px;
-    margin: 0px auto;
-    position: relative;
-    background-color: red;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.menu li {
-    color: white;
-    position: relative;
-    margin: 5px auto;
-    list-style-type: none;
-    display: inline;
+nav ul {
+  list-style:none;
+}
+
+nav ul li {
+   display: inline-block;
+   position: relative;
+   padding: 4px;
+}
+nav ul li p {
+   color: #ac5107;
+   font-size: 16px;
+  font-family: arial;
+  font-weight: 200;
+   text-decoration: none;
+   display: block;
+   margin: 1rem 1rem;
+   cursor: pointer;
+ }
+
+nav ul li a {
+	text-decoration: none;
+}
+
+nav ul li p:hover {
+  color: #fff;
+ }
+
+ nav ul li .caret {
+ position: relative;
+ top:3px;
+ font-weight: bold;
+ margin-left:10px;
+ margin-right:0px;
+ transform: rotateZ(-90deg);
+ }
+
+ nav ul li .caret:hover { 	
+ transform: rotateZ(0deg);
+ transition: 0.5s
+ }
+ 
+nav ul li::before {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: -0.6rem;
+  transition: all 0.2s;
+  top: 50px;
+}
+
+nav ul li:hover::before {
+  width: 100%;
+}
+ 
+ nav ul li:hover .children {
+ display:block;
+ }
+
+  nav ul li:hover .children li::before {
+    display: none;
+  }
+ 
+ nav ul li .children {
+ display: none;
+ background:#011826;
+ position: absolute;
+ width: 150%;
+ z-index:1000;
+ }
+ 
+ nav ul li .children li {
+ display:block;
+ overflow: hidden;
+ border-bottom: 1px solid rgba(255,255,255,.5);
+ }
+ 
+ nav ul li .children li a {
+   padding: 4px; 
+   color: #ac5107;
+   font-size: 16px;
+  font-weight: 500;
+   text-decoration: none;
+   display: block;
+   margin: 1rem 1rem;
+   cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+ }
+ 
+ nav ul li .children li a span {
+ float: right;
+ position: relative;
+ top:3px;
+ margin-right:0;
+ margin-left:10px;
+ }
+
+ .ir-arriba {
+    display: none;
+    padding: 20px;
+    background: black;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px 20px;
+    border-radius: 4px;
+    z-index: 10;
+  }
+  
+  .chatme {
+    padding: 20px;
+    background: black;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    margin: 20px 20px;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+
+
+
+/* menu para moviles*/
+
+
+
+
+ @media screen and (max-width: 800px) {
+
+
+	.precios {
+		width: 100%;
+	}
+
+
+.checkbox {
+  display: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0px;
+  padding: 5px;
+  z-index: 10;
+  background: black;
+  box-shadow: 0px 0px 5px #888888;
+}
+.header-logo {
+  height: 3rem;
+}
+.header-logo2 {
+  display: none;
+}
+.header-container {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-label {
+  width: 2rem;
+  height: 1.4rem;
+  cursor: pointer;
+}
+.header-button {
+  width: 2rem;
+  height: 0.2rem;
+  background: #ac5107;
+  position: absolute;
+  right: 1rem;
+  top: 1.6rem;  
+  transition: all 0.2s;
+}
+.header-button::before,
+.header-button::after {
+  content: "";
+  width: 2rem;
+  height: 0.2rem;
+  background: #ac5107;
+  position: absolute;
+  top: -0.6rem;
+  transition: all 0.2s;
+}
+.header-button::after {
+  top: 0.6rem;
+}
+
+
+      nav {
+		width: 70%;
+		height: 100%;
+		position: fixed;
+		left:-100%;
+		top: 0px;
+		margin: auto;
+		transition:all 0.5s;
+	}
+	nav ul {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+ 
+	 nav ul li {
+		display: block;
+		border-bottom:1px solid rgba( 0, 0, 0,.5);
+	}
+ 
+	 nav ul li:hover .children {
+		display: none;
+	}
+
+  .children:hover::before {
+    display: none;
+  }
+ 
+	 nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+	 nav ul li .children li a {
+		margin-left:20px;
+	}
+ 
+	 nav ul li .caret {
+		float: right;
+	}
+
+.checkbox:checked ~ nav {
+  left: 0rem;
+}
+
+.checkbox:checked + header .header-container label .header-button {
+  background: none;
+}
+.checkbox:checked + header .header-container label .header-button::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.checkbox:checked + header .header-container label .header-button::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+
+
 }

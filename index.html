@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Holguin Store</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="anim.css">
+	<meta charset="UTF-8">
+	<title>HOLGUIN STORE</title>
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family= Comfortaa" rel = "stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" >
+     <link rel="shortcut icon" href="logo.ico">
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery.js"></script>
+	<script src="main.js"></script>
 </head>
 <body>
-    <div class="menu">
-        <ul>
-            <li>Home</li>
-            <li>Servicios</li>
-            <li>Contacto</li>
-        </ul>
-    </div>
-    <h1>estoy de nuevo</h1>
+    
+    <div class="contenedor">
+
+	<span class="ir-arriba icon-arrow-up"></span>
+	<span class="chatme"><span class="icon-bubbles3"></span></span>
+
+	<input type="checkbox" id="btn-nav" class="checkbox">
+    <header>
+      <div class="header-container">
+        <img class="header-logo" src="./img/logo3d.png">
+        <label for="btn-nav" class="btn-label">
+          <div class="header-button"></div>
+        </label>
+      </div>
+    </header>
+
+		<nav class="menu" id="menu" >
+		 <img class="header-logo2" src="./img/logo3d.png" height="100px">
+			<ul>
+				<li><p class="inicio"><span class="icon-home"></span> Inicio</p></li>
+				<li class="submenu">
+					<p>Productos<span class="caret icon-arrow-down2"></span></p>
+					<ul class="children">
+						<li><a href="colchones.html">Colchones<span class="icon-dot"></span></a></li>
+						<li><a href="#">Base camas y espadares<span class="icon-dot"></span></a></li>
+						<li><a href="#">Muebles y accesorios de salas<span class="icon-dot"></span></a></li>
+					</ul>
+				<li><p class="nosotros"><span class="icon-info"></span> Nosotros</p></li>
+				<li><p class="contacto"><span class="icon-phone"></span> Contacto</p></li>
+			</ul>
+		</nav>
 
 </body>
 </html>
