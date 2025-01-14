@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: #1a0321;
+    background: white;
     font-family:consolas;
 }
 
@@ -13,4 +13,20 @@ h1  {
    margin:20px auto;
    font-size:30px;
    background-color:black;
+}
+
+.menu {
+    width: 80%;
+    height: 100px;
+    margin: 0px auto;
+    position: relative;
+    background-color: red;
+}
+
+.menu li {
+    color: white;
+    position: relative;
+    margin: 5px auto;
+    list-style-type: none;
+    display: inline;
 }
