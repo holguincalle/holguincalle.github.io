@@ -122,6 +122,88 @@ nav ul li:hover::before {
 
 
 
+  /* contenido principal*/
+
+
+
+  .contenidogeneral {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .portada {
+    background-image: url(img/banner.jpg);
+    background: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portada h1 {
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+    border: #000;
+    border-radius: 4px;
+    font-family: sans-serif, roboto ;
+  }
+
+  .contenidoppal {
+    margin: 0 auto;
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    font-family: sans-serif, Arial, Helvetica, sans-serif, roboto;
+  }
+
+  .seccion1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .seccion1 h1 {
+    color: black;
+    width: 100%;
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: sans-serif, Arial, Helvetica, sans-serif, roboto;
+    position: relative;
+  }
+
+  .parrafo1 {
+    width: 50%;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .seccion1 p {
+    text-align: left;
+    color: black;
+    font-size: 20px;
+  }
+
+  .imagen1 {
+    background-image: url(img/imagen1.jpg);
+    background: cover;
+    background-position: 50% 50%;
+    margin-top: 40px;
+    width: 50%;
+    height: 300px;
+    position: relative;
+  }
+
+
 /* menu para moviles*/
 
 
@@ -249,6 +331,17 @@ header {
   top: 0;
 }
 
+.contenidoppal {
+  width: 90%;
+}
+
+.parrafo1 {
+  width: 100%;
+}
+
+.imagen1 {
+  width: 100%;
+}
 
 
 }
