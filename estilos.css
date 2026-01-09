@@ -208,6 +208,7 @@ nav ul li:hover::before {
 
   .servicios {
     background-color: gray;
+    font-family: sans-serif;
   }
 
 
