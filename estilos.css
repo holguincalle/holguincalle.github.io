@@ -108,7 +108,6 @@ nav ul li:hover::before {
   .chatme {
     padding: 20px;
     background: #25D366;
-    background-color: #128C7E;
     font-size: 20px;
     color: #fff;
     cursor: pointer;
@@ -118,6 +117,10 @@ nav ul li:hover::before {
     margin: 20px 20px;
     border-radius: 50%;
     z-index: 10;
+  }
+
+  .chatme:hover {
+    background-color: #128C7E;
   }
   
 
@@ -201,9 +204,13 @@ nav ul li:hover::before {
     position: relative;
   }
 
-  .alarmas {
-    background-color: red;
+  /* servicios*/
+
+  .servicios {
+    background-color: gray;
   }
+
+
 
   /* pie de pagina*/
 
