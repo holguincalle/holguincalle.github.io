@@ -108,6 +108,7 @@ nav ul li:hover::before {
   .chatme {
     padding: 20px;
     background: #25D366;
+    background-color: #128C7E;
     font-size: 20px;
     color: #fff;
     cursor: pointer;
